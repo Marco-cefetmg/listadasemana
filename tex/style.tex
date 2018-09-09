@@ -39,10 +39,13 @@
 % command.
 \newenvironment{checklist}{%
   \renewcommand{\item}[1]{%
-    ##1\hspace{1em}\dotfill\makebox[3ex][r]{\Large{$\square$}}\\
+    \quad##1\hspace{1em}\dotfill\makebox[3ex][r]{\Large{$\square$}}\\
   }
   \newcommand{\step}[1]{%
     \hspace*{4em}-\hspace*{\labelsep}##1\\
+  }
+   \newcommand{\week}[1]{%
+     \textbf{##1}\\
   }
   \begin{tabular}{p{0.8\linewidth}}
      \toprule
