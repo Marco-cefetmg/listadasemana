@@ -1,5 +1,5 @@
 %\documentclass[portuguese,12pt,a4paper]{article}
-\documentclass[12pt]{article}
+\documentclass[portuguese,12pt]{article}
 
 \makeatletter
 \let\thetitle\@title
@@ -14,7 +14,8 @@
 \usepackage{environ}
 \usepackage{fancyhdr}
 \usepackage{amssymb}
-\usepackage[useregional]{./tex/datetime2}
+\ProvidesPackage{./tex/datetime2}
+\usepackage[portuguese]{datetime2}
 
 \pagestyle{fancy}
 \fancyhead{}
